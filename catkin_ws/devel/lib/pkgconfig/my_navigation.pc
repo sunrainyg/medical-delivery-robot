@@ -1,0 +1,8 @@
+prefix=/home/rosfun/catkin_ws/devel
+
+Name: my_navigation
+Description: Description of my_navigation
+Version: 2.3.7
+Cflags: 
+Libs: -L/home/rosfun/catkin_ws/devel/lib 
+Requires: tf roscpp sensor_msgs

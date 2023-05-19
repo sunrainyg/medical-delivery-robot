@@ -1,0 +1,8 @@
+prefix=/home/rosfun/catkin_ws/devel_isolated/arbotix_firmware
+
+Name: arbotix_firmware
+Description: Description of arbotix_firmware
+Version: 0.10.0
+Cflags: 
+Libs: -L/home/rosfun/catkin_ws/devel_isolated/arbotix_firmware/lib 
+Requires: 

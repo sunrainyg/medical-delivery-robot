@@ -1,0 +1,8 @@
+prefix=/home/rosfun/catkin_ws/devel_isolated/bring_up
+
+Name: bring_up
+Description: Description of bring_up
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/rosfun/catkin_ws/devel_isolated/bring_up/lib 
+Requires: 

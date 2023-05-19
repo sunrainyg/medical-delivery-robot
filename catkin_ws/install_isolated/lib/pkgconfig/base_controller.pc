@@ -1,0 +1,8 @@
+prefix=/home/rosfun/catkin_ws/install_isolated
+
+Name: base_controller
+Description: Description of base_controller
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/rosfun/catkin_ws/install_isolated/lib 
+Requires: 

@@ -1,0 +1,7 @@
+<launch>
+   <node name="mobilebase_arduino2" pkg="ros_arduino_python" type="arduino_node2.py" output="screen">
+      <rosparam file="$(find ros_arduino_python)/config/arduino_params.yaml" command="load" />
+   </node>
+
+
+</launch>

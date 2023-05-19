@@ -1,0 +1,8 @@
+prefix=/home/rosfun/catkin_ws/install_isolated
+
+Name: arbotix_sensors
+Description: Description of arbotix_sensors
+Version: 0.10.0
+Cflags: 
+Libs: -L/home/rosfun/catkin_ws/install_isolated/lib 
+Requires: 

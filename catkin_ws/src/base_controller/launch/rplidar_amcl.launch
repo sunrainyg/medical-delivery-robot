@@ -1,0 +1,9 @@
+<launch>
+  <!-- Run the map server with a map -->
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find rbx1_nav)/maps/map3.yaml" />
+
+  <!-- Run amcl -->
+  <include file="$(find navigation)/launch/amcl_omni.launch" />
+  <include file="$(find navigation)/launch/move_base.launch" />
+
+</launch>

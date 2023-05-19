@@ -1,0 +1,37 @@
+ <launch>
+
+    <include file="$(find ros_arduino_python)/launch/arduino.launch" />
+
+  <arg name="razor_config_file" default="$(find razor_imu_9dof)/config/my_razor.yaml"/>
+  <!-- node pkg="razor_imu_9dof" type="imu_node.py" name="imu_node" output="screen">
+    <rosparam file="$(arg razor_config_file)" command="load"/>
+  </node -->
+  
+   <include file="$(find ros_arduino_python)/launch/arduino2.launch" />
+
+
+  <!--苏高照版，没用,摆设 -->
+  <node pkg="robot_pose_ekf" type="robot_pose_ekf" name="robot_pose_ekf" output="screen" >
+    <remap from="robot_pose_ekf/odom_combined" to="odom_combined"/>
+    <param name="freq" value="10.0"/>
+    <param name="sensor_timeout" value="1.0"/>
+    <param name="publish_tf" value="true"/>
+    <param name="odom_used" value="true"/>
+    <param name="imu_used" value="false"/>
+    <param name="vo_used" value="false"/>
+    <param name="output_frame" value="odom"/>
+    <!-- remap from="imu_data" to="imu"/-->      
+  </node>
+    
+    <include file="$(find rplidar_ros)/launch/rplidar.launch" />
+    <node pkg="tf" type="static_transform_publisher" name="base_to_laser" args="0.00 0 0.33 0 0 0 base_footprint laser 100" output="screen" />
+
+  <node name="soundplay_node" pkg="sound_play" type="soundplay_node.py" output="screen"/>
+
+  <node name="talkback" pkg="rbx1_speech" type="talkback.py" output="screen">
+  	<param name="voice" value="voice_don_diphone"/>
+  	<param name="wavepath" value="$(find rbx1_speech)/sounds"/>
+  </node>
+
+
+</launch>

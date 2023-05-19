@@ -1,0 +1,9 @@
+<launch>
+  <node pkg="waterplus_map_tools" type="wp_manager" name="wp_manager" output="screen">
+    <param name="load" type="string" value="/home/rosfun/waypoints.xml"/> 
+  </node>
+
+<node pkg="waterplus_map_tools" type="wp_nav_test" name="wp_nav_test"  output="screen">
+  </node>
+
+</launch>

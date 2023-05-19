@@ -1,0 +1,2 @@
+set(action_demo_MESSAGE_FILES "/home/rosfun/catkin_ws/devel/share/action_demo/msg/DoDishesAction.msg;/home/rosfun/catkin_ws/devel/share/action_demo/msg/DoDishesActionGoal.msg;/home/rosfun/catkin_ws/devel/share/action_demo/msg/DoDishesActionResult.msg;/home/rosfun/catkin_ws/devel/share/action_demo/msg/DoDishesActionFeedback.msg;/home/rosfun/catkin_ws/devel/share/action_demo/msg/DoDishesGoal.msg;/home/rosfun/catkin_ws/devel/share/action_demo/msg/DoDishesResult.msg;/home/rosfun/catkin_ws/devel/share/action_demo/msg/DoDishesFeedback.msg")
+set(action_demo_SERVICE_FILES "")

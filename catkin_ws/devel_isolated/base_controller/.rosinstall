@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/rosfun/catkin_ws/devel_isolated/base_controller/setup.sh

@@ -1,0 +1,5 @@
+<launch>
+  <!-- include file="$(find navigation)/launch/move_base.launch" / -->
+  <include file="$(find navigation)/launch/gmapping_start.launch" />
+  <include file="$(find navigation_sim_demo)/launch/include/move_base.launch.xml"/>
+</launch>

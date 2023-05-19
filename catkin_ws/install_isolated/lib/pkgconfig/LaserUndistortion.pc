@@ -1,0 +1,8 @@
+prefix=/home/rosfun/catkin_ws/install_isolated
+
+Name: LaserUndistortion
+Description: Description of LaserUndistortion
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/rosfun/catkin_ws/install_isolated/lib 
+Requires: 
